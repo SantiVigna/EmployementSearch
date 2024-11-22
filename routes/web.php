@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmploymentController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [EmploymentController::class, 'index'])->name('home');
