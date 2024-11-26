@@ -15,5 +15,6 @@ class Employment extends Model
         'company',
         'country',
         'contact',
+        'image',
     ];
 }

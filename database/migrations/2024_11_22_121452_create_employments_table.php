@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('company');
             $table->string('country');
             $table->string('contact');
+            $table->string('image');
             $table->timestamps();
         });
     }

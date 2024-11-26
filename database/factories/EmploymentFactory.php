@@ -22,6 +22,7 @@ class EmploymentFactory extends Factory
             'company'=> $this->faker->company(),
             'country'=> $this->faker->country($maxnbchars = 20),
             'contact' => $this->faker->phoneNumber(),
+            'image' => $this->faker->imageUrl(),
         ];
     }
 }
