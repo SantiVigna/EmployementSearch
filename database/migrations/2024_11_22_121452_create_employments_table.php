@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('employment');
             $table->string('state');
             $table->string('company');
+            $table->string('country');
+            $table->string('contact');
             $table->timestamps();
         });
     }

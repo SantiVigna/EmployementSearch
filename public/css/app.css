@@ -1,0 +1,13 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#finished {
+    background-color: rgb(0, 179, 0);
+}
+
+#notFinished {
+    background-color: yellow;
+}

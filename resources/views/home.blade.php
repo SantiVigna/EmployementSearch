@@ -1,24 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="journals">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Date</th>
-                    <th scope="col">Entry</th>
-                    <th scope="col">Emotion</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach ($employments as $employment)
-                    <tr>
-                        <td>{{$employment->created_at}}</td>
-                        <td>{{$employment->entry}}</td>
-                        <td><img src="{{asset($employment->emotion)}}" class="emotionImg" alt="emotion"></td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
+    <div class="cards">
+    @foreach ($employments as $employment)
+        <div class="employment">
+            <div class="p-10">  
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                    <img class="w-full" src="" alt="Mountain">
+                    <div class="px-6 py-4">
+                        <div class="font-bold text-xl mb-2">{{$employment->employment}}</div>
+                        <p class="text-gray-700 text-base">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+                        </p>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{$employment->country}}</span>
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                            @if($employment->state == 0)
+                            <p>Finished</p>
+                            @else
+                            <p>In Progress</p>
+                            @endif
+                        </span> 
+                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">{{$employment->contact}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    @endforeach
     </div>
 @endsection
+
+

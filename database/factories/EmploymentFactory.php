@@ -17,9 +17,11 @@ class EmploymentFactory extends Factory
     public function definition(): array
     {
         return [
-            'employment' => $this->faker->realText($maxNbChars = 200),
-            'state' => $this->faker->realText($maxNbChars = 200),
-            'company' => $this->faker->realText($maxNbChars = 200),
+            'employment' => $this->faker->jobTitle(),
+            'state' => $this->faker->boolean($chanceOfGettingTrue = 50),
+            'company'=> $this->faker->company(),
+            'country'=> $this->faker->country($maxnbchars = 20),
+            'contact' => $this->faker->phoneNumber(),
         ];
     }
 }

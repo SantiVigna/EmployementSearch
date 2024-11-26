@@ -13,5 +13,7 @@ class Employment extends Model
         'employment',
         'state',
         'company',
+        'country',
+        'contact',
     ];
 }
