@@ -2,12 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
-#finished {
-    background-color: rgb(0, 179, 0);
+.employment {
+    width: 400px;
+    min-height: 600px;
 }
 
-#notFinished {
-    background-color: yellow;
+.employment img {
+    width: 320px;
 }
