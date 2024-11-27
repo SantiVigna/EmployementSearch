@@ -8,3 +8,4 @@ Route::get('/employments', [EmploymentController::class, 'index'])->name('apihom
 Route::post('/employments', [EmploymentController::class, 'store'])->name('apistore');
 Route::put('/employments/{id}', [EmploymentController::class, 'update'])->name('apiupdate');
 Route::delete('/employments/{id}', [EmploymentController::class, 'destroy'])->name('apidestroy');
+Route::get('/employments/{id}', [EmploymentController::class, 'show'])->name('apishow');

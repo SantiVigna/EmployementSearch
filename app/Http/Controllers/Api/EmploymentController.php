@@ -47,7 +47,8 @@ class EmploymentController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $employment = Employment::find($id);
+        return response()->json($employment, 200);
     }
 
     /**
