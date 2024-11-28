@@ -9,9 +9,8 @@ use App\Models\Employment;
 
 class EmploymentTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     */
+    use RefreshDatabase;
+
     public function test_example(): void
     {
         $response = $this->get('/');

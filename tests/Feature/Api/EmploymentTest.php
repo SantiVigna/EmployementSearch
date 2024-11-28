@@ -28,7 +28,7 @@ class EmploymentTest extends TestCase
     }
 
     public function test_IfCanDeleteAnEmploymentWithApi(){
-        $employment = Employment::factory(1)->create();
+        $employment = Employment::factory(2)->create();
 
         $response = $this->delete(route('apidestroy', 1));
         $this->assertDatabaseCount('employments', 1);
@@ -64,12 +64,12 @@ class EmploymentTest extends TestCase
         ]);
 
         $data = ['employment' => "Utility Meter Reader"];
-        $response = $this ->get(route('apihome'));
+        $response = $this->get(route('apihome'));
         $response->assertStatus(200)
                 ->assertJsonCount(1)
                 ->assertJsonFragment($data);
 
-        $response = $this->put('/api/employments/5', [
+        $response = $this->put(route('apiupdate', 1), [
             'employment' => "Offset Lithographic Press Operator",
             'state' => "1",
             'company'=> "Cole, Gleason and Russel",
@@ -79,10 +79,20 @@ class EmploymentTest extends TestCase
         ]);
 
         $data = ['employment' => "Offset Lithographic Press Operator"];
-        $response = $this ->get(route('apihome'));
+        $response = $this->get(route('apihome'));
         $response->assertStatus(200)
                 ->assertJsonCount(1)
                 ->assertJsonFragment($data);
 
+    }
+
+    public function test_IfReceiveJustOneEmployment(){
+        $employment = Employment::factory(2)->create();
+
+        $response = $this->get(route('apishow', 1));
+
+        $data = ['id' => 1];
+        $response->assertStatus(200)
+                ->assertJsonFragment($data);
     }
 }
