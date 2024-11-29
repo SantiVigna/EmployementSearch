@@ -16,3 +16,9 @@
 .employment img {
     width: 320px;
 }
+
+.info {
+    display: flex;
+    justify-content: center;
+    font-style: oblique;
+}

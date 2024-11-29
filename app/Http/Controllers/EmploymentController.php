@@ -32,13 +32,14 @@ class EmploymentController extends Controller
     //     //
     // }
 
-    // /**
-    //  * Display the specified resource.
-    //  */
-    // public function show(Employment $employment)
-    // {
-    //     //
-    // }
+    /**
+     * Display the specified resource.
+     */
+    public function show(Employment $employment, string $id)
+    {
+        $employment = Employment::findOrFail($id);
+        return view('show', compact('employment'));
+    }
 
     // /**
     //  * Show the form for editing the specified resource.
