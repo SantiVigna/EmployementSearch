@@ -30,11 +30,11 @@
                         <div>
                             <span class="font-bold text-gray-700 dark:text-gray-300">State:</span>
                             <span class="text-gray-600 dark:text-gray-300">
-                            @if($employment->state == 0)
-                                Finished
-                            @else
-                                In Progress
-                            @endif
+                                @if($employment->state == 0)
+                                <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900">Finished</span>
+                                @else
+                                <span class="rounded-full bg-yellow-200 px-3 py-1 text-xs font-semibold text-yellow-900">In Progress</span>
+                                @endif
                             </span>
                         </div>
                     </div>
