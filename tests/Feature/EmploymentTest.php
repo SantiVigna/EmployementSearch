@@ -29,4 +29,22 @@ class EmploymentTest extends TestCase
         $response->assertStatus(200)
                 ->assertViewIs('home');
     }
+
+    public function test_IfEmploymentInShowCanBeReceived()
+    {
+        $show = Employment::factory()->create([
+            'employment' => 'Sample Post',
+            'company' => 'dnmwjndjwand',
+        ]);
+
+        // Hacer una petición GET a la ruta del show
+        $response = $this->get(route('show', $show->id));
+
+        // Verificar que la respuesta es 200
+        $response->assertStatus(200);
+
+        // Verificar que el título y contenido están en la vista
+        $response->assertSee($show->employment);
+        $response->assertSee($show->company);
+    }
 }
