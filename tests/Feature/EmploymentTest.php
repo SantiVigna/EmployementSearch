@@ -29,4 +29,17 @@ class EmploymentTest extends TestCase
         $response->assertStatus(200)
                 ->assertViewIs('home');
     }
+    public function test_IfCanReceiveOneEmploymentInBladeShow()
+    {
+        $employment = Employment::factory()->create([
+            'employment' => 'Senior Laravel Developer',
+            'company' => 'Amazon',
+        ]);
+
+        $response = $this->get(route('show', $employment->id));
+
+        $response->assertStatus(200);
+        $response->assertSee($employment->employment);
+        $response->assertSee($employment->company);
+    }
 }
