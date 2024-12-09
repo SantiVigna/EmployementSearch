@@ -17,4 +17,8 @@ class Employment extends Model
         'contact',
         'image',
     ];
+
+    public function follows() {
+        return $this->hasMany(Follow::class);
+    }
 }
