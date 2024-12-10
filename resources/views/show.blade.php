@@ -67,7 +67,7 @@
                                             <img src="{{ asset('img/dangerIcon.png')}}" alt="" class="h-8 w-8">
                                         </div>
                                         <div class="md:col-start-3 col-span-11 xl:-ml-5">
-                                            <p class="text-sm text-gray-800 font-light">No existe seguimiento aun</p>
+                                            <p class="text-sm text-gray-800 font-light">It doesn't exist a follow yet</p>
                                         </div>
                                     </a>
                                 </div>
