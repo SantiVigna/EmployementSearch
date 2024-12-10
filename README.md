@@ -73,6 +73,11 @@ _To this_ <br>
 >[!NOTE]
 >You just need to uncomment those 5 lines and change the name of the database.
 ---
+7. #### Finally you need to run the following command to migrate the table to database
+* Migration
+  ```sh
+  php artisan migrate:fresh --seed
+  ```
 
 ## EndPoints
 1. #### Route that makes all endpoints visible. 
@@ -99,3 +104,35 @@ _To this_ <br>
 5. #### Route that makes just one employment visible by the ID
 <img src="https://github.com/user-attachments/assets/1d7b4d38-e994-4de4-a9b8-5db729a13af6" width=600>
 
+---
+
+## Tests
+_Testing is crucial to ensure the website works as intended. It validates core features like job posting, application tracking, identifying and fixing issues before deployment. By running thorough tests, we guarantee a reliable and seamless user experience._
+
+_By this command you can run tests:_
+
+* Test in Terminal
+  ```sh
+  php artisan test
+  ```
+<img src="https://github.com/user-attachments/assets/386c178d-f890-4a70-92c2-298cda3f8ba9"> 
+
+* Test in HTML
+```sh
+  php artisan test --coverage-html=coverage-report
+  ```
+<img src="https://github.com/user-attachments/assets/88abcd58-7112-444f-878f-07a249ebc833" width=800>
+
+---
+
+## Database Diagram
+
+![image](https://github.com/user-attachments/assets/4046c2c5-f35d-4fd1-a0ff-c8541e309097)
+
+---
+
+## Author
+
+Santino Vigna Tiburzi
+<a href="https://github.com/SantiVigna">Github</a>
+<a href="https://www.instagram.com/santivigna_/">Github</a>
