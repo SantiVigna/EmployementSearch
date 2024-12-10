@@ -4,7 +4,7 @@
 _The project aims to develop a web application using PHP Laravel, designed to manage job applications efficiently. Users can create and post job offers, track their applications, and monitor their progress. The platform will include features such as user authentication, a dashboard to organize active and past applications, and notification tools to update users about application statuses. This system will streamline the job application process, providing an intuitive and user-friendly experience._
 
 ## Screenshots
-<img src="https://github.com/user-attachments/assets/8b6bbce4-8f70-452b-9d6e-707c96c93d03" width=400px>
+<img src="https://github.com/user-attachments/assets/8b6bbce4-8f70-452b-9d6e-707c96c93d03" width=500px>
 <img src="https://github.com/user-attachments/assets/550c62de-6e4f-4e73-a28e-bc322214b499" width=400px>
 
 ---
