@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/d84d4e13-4dd0-4c81-821d-b8a9df220c96)# EmploymentSearch
+# EmploymentSearch
 
 ## Project Synopsis:
 _The project aims to develop a web application using PHP Laravel, designed to manage job applications efficiently. Users can create and post job offers, track their applications, and monitor their progress. The platform will include features such as user authentication, a dashboard to organize active and past applications, and notification tools to update users about application statuses. This system will streamline the job application process, providing an intuitive and user-friendly experience._
@@ -89,4 +89,13 @@ _To this_ <br>
 
 >[!NOTE]
 >If you try to remove an unexistent employment it will drop an error.
+
+4. #### Route in which you can edit an employment
+<img src="https://github.com/user-attachments/assets/8632f3ba-1259-423a-beff-c09964dc2cab" width=600>
+
+>[!CAUTION]
+>You must follow the given structure, otherwise it won't work.
+
+5. #### Route that makes just one employment visible by the ID
+<img src="https://github.com/user-attachments/assets/1d7b4d38-e994-4de4-a9b8-5db729a13af6" width=600>
 
