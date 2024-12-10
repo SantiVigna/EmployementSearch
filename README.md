@@ -1,67 +1,92 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+![image](https://github.com/user-attachments/assets/d84d4e13-4dd0-4c81-821d-b8a9df220c96)# EmploymentSearch
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Project Synopsis:
+_The project aims to develop a web application using PHP Laravel, designed to manage job applications efficiently. Users can create and post job offers, track their applications, and monitor their progress. The platform will include features such as user authentication, a dashboard to organize active and past applications, and notification tools to update users about application statuses. This system will streamline the job application process, providing an intuitive and user-friendly experience._
 
-## About Laravel
+## Screenshots
+<img src="https://github.com/user-attachments/assets/8b6bbce4-8f70-452b-9d6e-707c96c93d03" width=500px>
+<img src="https://github.com/user-attachments/assets/550c62de-6e4f-4e73-a28e-bc322214b499" width=400px>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Instalation Requirements
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<ul>
+    <li>Install an application for the code</li>
+    <li>Get an aplication to use sql databases</li>
+    <li>Install Node in your PC</li>
+    <li>Install Composer in your PC</li>
+    <li>Install the database located in Instalation directory and import it into sql app</li>
+    <li>Configure .env to let the web use the database</li>
+    <li>Execute the terminal commands that are given after this section</li>
+    <li>Optional: Install Postman to manipulate the information (Create an employment, modify one, delete, etc)</li>
+</ul>
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Installation steps
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. ### First you need an application to see all the code (_For example VSCode_)
+<img src="https://github.com/user-attachments/assets/d2f37fa4-729f-42d5-9735-f98ac4f710ac" width=700>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+2. ### Then you need an application to develop sql Databases (_For example XAMMP_)
+<img src="https://github.com/user-attachments/assets/ff35f5d6-c921-419a-ac14-ba92ba72c083" width=700>
 
-## Laravel Sponsors
+3. ## Then you need to browse in internet to install composer and node in your PC
+<img src="https://github.com/user-attachments/assets/2b384a47-d0b4-49a5-ac78-2efef7439f9f" width=500>
+<img src="https://github.com/user-attachments/assets/66853a0e-f95c-4c70-88c5-f9251e6d690c" width=500>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+_Node_: https://nodejs.org/en/ <br>
+_Composer_: https://getcomposer.org 
 
-### Premium Partners
+4. ### Once you install them, you need to run into the terminal this 3 commands in this order
+* Clone Repository
+  ```sh
+  git clone https://github.com/SantiVigna/EmploymentSearch.git
+  ```
+    _Enter into the cloned folder and execute the next 2 commands_ <br> <br>
+* Npm
+  ```sh
+  npm install
+  ```
+* Composer
+  ```sh
+  composer install
+  ```
+  <br>
+>[!WARNING]
+>If you don't run this 2 commands the application won't work.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+  ---
 
-## Contributing
+5. ### Then you need to import the sql database into the sql application
+<img src="https://github.com/user-attachments/assets/f9c741ce-3ea1-4223-8a32-e2ba8b1b47b7" width=700>
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. Now you need to configure the .env file to connect it with the database
 
-## Code of Conduct
+_You have to change this:_ <br>
+<img src="https://github.com/user-attachments/assets/89ea22b9-50a3-4da2-8ab4-8d13837d1596" width="600">
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+_To this_ <br>
+<img src="https://github.com/user-attachments/assets/022ed5cb-52a3-4b49-aac3-36ec4d9423bb" width="600">
 
-## Security Vulnerabilities
+>[!NOTE]
+>You just need to uncomment those 5 lines and change the name of the database.
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## EndPoints
+1. #### Route that makes all endpoints visible. 
+<img src="https://github.com/user-attachments/assets/b9196b7c-7c10-4421-9a44-e3d2bb0daed9" width="600"> 
 
-## License
+2. #### Route that gives the possibility to create an employment
+<img src="https://github.com/user-attachments/assets/5c0d16ac-742d-4fe0-a7b0-bf3b96aee2ec" width="600"> 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# EmployementSearch
+>[!CAUTION]
+>Those are the only parameters to be able to create a job, if you try to add something that is not within the parameters it won't work.
+
+3. #### Route to delete an employment by the ID
+<img src="https://github.com/user-attachments/assets/e73a9720-7a52-4ff5-9b96-ff2ada05157a" width="600"> 
+
+>[!NOTE]
+>If you try to remove an unexistent employment it will drop an error.
+
