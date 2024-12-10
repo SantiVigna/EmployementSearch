@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\EmploymentController;
+use App\Http\Controllers\Api\FollowController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -9,3 +10,4 @@ Route::post('/employments', [EmploymentController::class, 'store'])->name('apist
 Route::put('/employments/{id}', [EmploymentController::class, 'update'])->name('apiupdate');
 Route::delete('/employments/{id}', [EmploymentController::class, 'destroy'])->name('apidestroy');
 Route::get('/employments/{id}', [EmploymentController::class, 'show'])->name('apishow');
+Route::post('/employments/{employmentId}/follows', [FollowController::class, 'store']);

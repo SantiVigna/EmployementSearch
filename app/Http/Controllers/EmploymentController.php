@@ -12,7 +12,7 @@ class EmploymentController extends Controller
      */
     public function index()
     {
-        $employments = Employment::all();
+        $employments = Employment::with('follows')->get();
         return view('home', compact('employments'));
     }
 

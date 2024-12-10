@@ -12,7 +12,7 @@
                     </div>
                     <div class="flex -mx-2 mb-4">
                         <div class="w-1/2 px-2">
-                            <a href="http://192.168.1.44:8000"><button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Go back</button></a>
+                            <a href="http://127.0.0.1:8000"><button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Go back</button></a>
                         </div>
                     </div>
                 </div>
@@ -47,12 +47,32 @@
                     </div>
                     <div>
                         <span class="font-bold text-gray-700 dark:text-gray-300">Follow-Up:</span>
-                        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                            sed ante justo. Integer euismod libero id mauris malesuada tincidunt. Vivamus commodo nulla ut
-                            lorem rhoncus aliquet. Duis dapibus augue vel ipsum pretium, et venenatis sem blandit. Quisque
-                            ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum lacinia, non
-                            sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi consectetur.
+                        <p class="text-gray-600 dark:text-gray-300 text-sm mt-3">
+                            <ul>
+                                @forelse ($employment->follows as $follow)
+                                <div class="bg-gray-200 gap-4 news">
+                                    <a class="rounded-sm grid grid-cols-12 bg-white shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform" href="">
+                                        <div class="col-span-12 md:col-span-1">
+                                            <img src="{{ asset('img/exclamationIcon.png')}}" alt="" class="h-8 w-8">
+                                        </div>
+                                        <div class="md:col-start-3 col-span-11 xl:-ml-5">
+                                            <p class="text-sm text-gray-800 font-light">{{$follow->news}}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                @empty 
+                                <div class="bg-gray-200 gap-4 news">
+                                    <a class="rounded-sm grid grid-cols-12 bg-white shadow p-3 gap-2 items-center hover:shadow-lg transition delay-150 duration-300 ease-in-out hover:scale-105 transform" href="">
+                                        <div class="col-span-12 md:col-span-1">
+                                            <img src="{{ asset('img/dangerIcon.png')}}" alt="" class="h-8 w-8">
+                                        </div>
+                                        <div class="md:col-start-3 col-span-11 xl:-ml-5">
+                                            <p class="text-sm text-gray-800 font-light">No existe seguimiento aun</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                @endforelse
+                            </ul>
                         </p>
                     </div>
                 </div>

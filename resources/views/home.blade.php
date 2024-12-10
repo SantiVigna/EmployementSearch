@@ -27,7 +27,7 @@
                     <img class="h-full w-full rounded-full" src="{{$employment->image}}" alt="" />
                   </div>
                   <div class="ml-3">
-                    <p class="whitespace-no-wrap"><a href="http://192.168.1.44:8000/employment/{{$employment->id}}">{{$employment->employment}}</a></p>
+                    <p class="whitespace-no-wrap"><a href="http://127.0.0.1:8000/employment/{{$employment->id}}">{{$employment->employment}}</a></p>
                   </div>
                 </div>
               </td>

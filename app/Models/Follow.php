@@ -2,18 +2,20 @@
 
 namespace App\Models;
 
+use App\Models\Employment;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Follow extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'job_id',
+        'employment_id',
         'news',
     ];
 
-    public function work() {
-        return $this->belongsTo(Work::class);
+    public function employment() {
+        return $this->belongsTo(Employment::class);
     }
 }
