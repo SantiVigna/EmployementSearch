@@ -4,7 +4,7 @@
 _The project aims to develop a web application using PHP Laravel, designed to manage job applications efficiently. Users can create and post job offers, track their applications, and monitor their progress. The platform will include features such as user authentication, a dashboard to organize active and past applications, and notification tools to update users about application statuses. This system will streamline the job application process, providing an intuitive and user-friendly experience._
 
 ## Screenshots
-<img src="https://github.com/user-attachments/assets/8b6bbce4-8f70-452b-9d6e-707c96c93d03" width=500px>
+<img src="https://github.com/user-attachments/assets/8b6bbce4-8f70-452b-9d6e-707c96c93d03" width=400px>
 <img src="https://github.com/user-attachments/assets/550c62de-6e4f-4e73-a28e-bc322214b499" width=400px>
 
 ---
@@ -126,13 +126,13 @@ _By this command you can run tests:_
 ---
 
 ## Database Diagram
-
+_With this diagram the relation of the tables and their parameters can be seen_
 ![image](https://github.com/user-attachments/assets/4046c2c5-f35d-4fd1-a0ff-c8541e309097)
 
 ---
 
 ## Author
 
-Santino Vigna Tiburzi
+Santino Vigna Tiburzi <br>
 <a href="https://github.com/SantiVigna">Github</a>
-<a href="https://www.instagram.com/santivigna_/">Github</a>
+<a href="https://www.instagram.com/santivigna_/">Instagram</a>
