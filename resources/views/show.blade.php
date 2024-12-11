@@ -7,13 +7,13 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row -mx-4">
                 <div class="md:flex-1 px-4">
-                    <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                        <img class="w-full h-full object-cover" src="{{$employment->image}}" alt="Product Image">
-                    </div>
                     <div class="flex -mx-2 mb-4">
                         <div class="w-1/2 px-2">
-                            <a href="http://127.0.0.1:8000"><button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Go back</button></a>
+                            <a href="http://192.168.1.72:7000"><button class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Go back</button></a>
                         </div>
+                    </div>
+                    <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
+                        <img class="w-full h-full object-cover" src="{{$employment->image}}" alt="Product Image">
                     </div>
                 </div>
                 <div class="md:flex-1 px-4">
@@ -31,9 +31,9 @@
                             <span class="font-bold text-gray-700 dark:text-gray-300">State:</span>
                             <span class="text-gray-600 dark:text-gray-300">
                                 @if($employment->state == 0)
-                                <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900">Finished</span>
+                                <span class="rounded-full bg-red-200 px-3 py-1 text-xs font-semibold text-red-900">Finished</span>
                                 @else
-                                <span class="rounded-full bg-yellow-200 px-3 py-1 text-xs font-semibold text-yellow-900">In Progress</span>
+                                <span class="rounded-full bg-green-200 px-3 py-1 text-xs font-semibold text-green-900">In Progress</span>
                                 @endif
                             </span>
                         </div>
