@@ -104,6 +104,9 @@ _To this_ <br>
 5. #### Route that makes just one employment visible by the ID
 <img src="https://github.com/user-attachments/assets/1d7b4d38-e994-4de4-a9b8-5db729a13af6" width=600>
 
+6. #### Route in which you can add a new follow to an employment
+<img src="https://github.com/user-attachments/assets/200be398-2cc6-4743-bef8-085878bf1f00" width=600>
+
 ---
 
 ## Tests
